@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(0, 0, 0);
+}
+
+.base-container {
+    padding: 30px 60px;
+    width: 100%;
+    max-width: 1600px;
+    min-width: 600px;
+
+    border-radius: 30px;
+}
+
+.txt {
+    color: bisque;
+    font-size: 18px;
+    font-family: "Dosis", sans-serif;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+
+    background-color: transparent;
+    border: 1px solid bisque;
+    border-radius: 10px;
+
+    transition: background-color 200ms,
+                color 200ms;
+}
+
+.btn:hover {
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+}
+
+.btn:active {
+    background-color: transparent;
+    color: bisque;
+}
+
+.scaling-unit {
+    transition: transform 200ms;
+}
+
+.scaling-unit:hover {
+    transform: scale(1.1);
+}
+
+.scaling-unit:active {
+    transform: scale(0.9);
+}
+
+.outer-link {
+    text-decoration: none;
+}
+
+.outer-link:hover {
+    text-decoration: underline;
+}
+
+.outer-link:active {
+    text-decoration: none;
+}
+
+/* HEADER */
+.header {
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-item {}
+
+.header-logo-svg {
+    height: 50px;
+    width: 50px;
+    fill: bisque;
+}
+
+.header-menu {
+    display: flex;
+}
+
+.header-menu-item {
+    margin-right: 30px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.header-menu-item:last-child {
+    margin: 0;
+}
+
+.header-menu-item-checked {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+/* MAIN */
+.main {
+
+    flex-grow: 1;
+
+    background-color: rgb(26, 26, 26);
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-item {}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    fill: bisque;
+}
+
+
+
+
